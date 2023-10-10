@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheese Fanclub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@200&family=Lora&family=Plaster&family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-rJpXV4PZ3+gSLZ+8eVA5wrTI+GRsPc6CD/A/XGwEjhMIePRT3XP6D5tj9gy8r2kt" crossorigin="anonymous">
+    <style>
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}
+section {
+    display: block;
+}
+body {
+    background-color: #031F40;
+    text-align: center;
+}
+p, h2, h3, li, .level, figcaption {
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.footer {
+    color: #001F3F;
+    background-color: #FFFFFF;
+    font-family: 'Space Grotesk', sans-serif;
+}
+a {
+    color: white; /* Your desired color for unvisited links */
+    text-decoration: none; /* Remove underlines by default, you can change this as needed */
+    margin-right: 10px;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.starry-background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #001F3F; /* Dark blue background */
+}
+
+.star {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #FFFFFF; /* White stars */
+    border-radius: 50%;
+    animation: twinkling 1s infinite;
+}
+
+@keyframes twinkling {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+#nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff76; /* Add your preferred background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow for depth */
+    z-index: 1000; /* Ensure it's above other elements */
+    text-align: center;
+  }
+nav {
+    font-weight: 400;
+}
+nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+li {
+    list-style: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+p {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+#header {
+  margin-top: 100px; /* Adjust the margin-top value based on the desired gap */
+}
+.crafted-delights {
+    font-size: 60px;
+    padding-bottom: 40px;
+}
+#hero {
+  margin-top: 20px; /* Adjust the margin-top value based on the desired gap */
+}
+#header-img {
+    display: flex;
+    align-items: center;
+    margin: auto 310px;
+    justify-content: center;
+    height: 300px; /* Adjust the height as needed */
+}
+.logo {
+    width: 60vw;
+}
+.desc {
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+.indulgence, .cinematic, .diversity {
+    background-color: #ffffff79;
+    width: 400px;
+    text-align: center;
+    margin: auto;
+}
+.level {
+    font-size: 40px;
+    padding-top: 100px;
+}
+#how-it-works {
+    padding-top: 100px;
+}
+h3 {
+    padding-bottom: 40px;
+    font-weight: bold;
+}
+.btn {
+    width: 100px;
+    height: 30px;
+}
+footer {
+    padding-top: 60px;
+    margin: auto;
+}
+    </style>
+</head>
+<body>
+    <div id="page-wrapper">
+        <header id="header">
+            <div class="logo">
+                <img id="header-img" src="https://i.pinimg.com/originals/a1/ec/d5/a1ecd5468cd5a9ef72e394e28e11217a.png" alt="cheese fanclub">
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#how-it-works">How it Works</a></li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>            
+        </header>
+        <div class="container"></div>
+        <section id="hero">
+            <h2 class="crafted-delights">Crafted Delights, Shared Stories</h2>
+            <form id="form" action="">
+                <input name="email" id="email" type="email" placeholder="Enter your email address" required>
+                <input id="submit" type="submit" value="Get Started" class="btn" action="https://www.freecodecamp.com/email-submit">
+            </form>
+        </section>
+        <div class="container">
+            <section id="features">
+                <div class="grid">
+                    <div class="icon">
+                        <i class="fa fa-3x fa-fire"></i>
+                    </div>
+                    <div class="desc">
+                        <h2 class="diversity">Diversity of Flavors</h2>
+                        <p>Ensures a wide appeal with various cheese profiles, catering to different tastes within the group.</p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="icon">
+                        <i class="fa fa-3x fa-fire"></i>
+                    </div>
+                    <div class="desc">
+                        <h2 class="cinematic">Cinematic Synergy</h2>
+                        <p>Adds a themed experience, turning cheese indulgence into a shared cinematic adventure for your movie-loving group.</p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="icon">
+                        <i class="fa fa-3x fa-fire" aria-hidden="true"></i>
+                    </div>
+                    <div class="desc">
+                        <h2 class="indulgence">Sweet Indulgence</h2>
+                        <p>The addition of strawberry shortcakes complements the savory cheeses, offering a well-rounded and satisfying culinary experience.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="how-it-works">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/7X8II6J-6mU" frameborder="0" allowfullscreen></iframe>
+                <figcaption class="video-caption">Cheeses and les(bians)</figcaption>
+            </section>
+            <section id="pricing">
+                <div class="product" id="delight">
+                    <div class="level">Cheesy Delight Package - "Les Misérables Edition"</div>
+                    <h3>$35</h3>
+                    <ol>
+                        <li>Brie (200g) - Fantine's delicate struggles.</li>
+                        <li>Gouda (250g) - Valjean's enduring strength.</li>
+                        <li>Havarti (300g) - The versatility of Javert's character</li>
+                        <li>Blue Cheese (150g) - The bold revolution like Marius</li>
+                        <li>Swiss (200g) - Eponine's classic, timeless devotion</li>
+                        <li>Pepper Jack (200g) - The spiciness of the barricades</li>
+                        <li>Camembert (180g) - Cosette's unique and sweet story</li>
+                        <p><strong>Added Movie Magic: </strong><span>A "Les Misérables" DVD, soundtrack, or a book for the complete experience.</span></p>
+                        <p><strong>Sweet Addition: </strong><span>A small pack of strawberry shortcakes to sweeten the revolutionary journey.</span></p>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="product" id="lovers">
+                    <div class="level">Cheese Lover's Package - "Cinematic Extravaganza"</div>
+                    <h3>$50</h3>
+                    <ol>
+                        <li>Brie (300g) - Drama as rich as Javert's pursuit.</li>
+                        <li>Gouda (350g) - Aged to perfection like Valjean's character.</li>
+                        <li>Havarti (400g) - Versatility to match the film's scope.</li>
+                        <li>Blue Cheese (200g) - The bold notes of revolution.</li>
+                        <li>Swiss (250g) - A classic, like the enduring love.</li>
+                        <li>Pepper Jack (250g) - Spice reflecting the intensity.</li>
+                        <li>Camembert (220g) - Quirky and unique, like the film's narrative.</li>
+                        <p><strong>Added Movie Magic:</strong><span> Include a movie night kit with popcorn and Les Mis-themed decorations.</span></p>
+                        <p><strong>Sweet Addition:</strong><span> A strawberry shortcake mix for a delightful dessert after the cinematic feast.</span></p>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="product" id="ultimate">
+                    <div class="level">Ultimate Cheese Feast - "Epic Movie Marathon"</div>
+                    <h3>$70</h3>
+                    <ol>
+                        <li>Brie (400g) - Epic tales woven like Valjean's life.</li>
+                        <li>Gouda (450g) - Layers of complexity, mirroring the story.</li>
+                        <li>Havarti (500g) - A feast of flavors, like the film's grandeur.</li>
+                        <li>Blue Cheese (250g) - Intensity echoing the barricades.</li>
+                        <li>Swiss (300g) - Timeless like the enduring themes.</li>
+                        <li>Pepper Jack (300g) - Spice of rebellion and passion.</li>
+                        <li>Camembert (250g) - Uniqueness akin to the characters.</li>
+                        <p><strong>Added Movie Magic:</strong><span> Complete Les Misérables movie collection or a cinematic encyclopedia.</span></p>
+                        <p><strong>Sweet Addition:</strong><span> A deluxe strawberry shortcake kit for the ultimate dessert experience.</span></p>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+            </section>
+            <div>
+                <div class="stars">
+                    <div class="starry-background">
+                        <div class="star" style="top: 25%; left: 46%;"></div>
+                        <div class="star" style="top: 30%; left: 74%;"></div>
+                        <div class="star" style="top: 48%; left: 10%;"></div>
+                        <div class="star" style="top: 41%; left: 75%;"></div>
+                        <div class="star" style="top: 64%; left: 65%;"></div>
+                        <div class="star" style="top: 76%; left: 47%;"></div>
+                        <div class="star" style="top: 84%; left: 0%;"></div>
+                        <div class="star" style="top: 98%; left: 26%;"></div>
+                
+                        <div class="star" style="top: 94%; left: 41%;"></div>
+                        <div class="star" style="top: 88%; left: 75%;"></div>
+                        <div class="star" style="top: 77%; left: 10%;"></div>
+                        <div class="star" style="top: 66%; left: 78%;"></div>
+                        <div class="star" style="top: 51%; left: 61%;"></div>
+                        <div class="star" style="top: 42%; left: 43%;"></div>
+                        <div class="star" style="top: 30%; left: 0%;"></div>
+                        <div class="star" style="top: 21%; left: 22%;"></div>
+                
+                        <div class="star" style="top: 1%; left: 100%;"></div>
+                        <div class="star" style="top: 2%; left: 90%;"></div>
+                        <div class="star" style="top: 3%; left: 80%;"></div>
+                        <div class="star" style="top: 4%; left: 70%;"></div>
+                        <div class="star" style="top: 5%; left: 60%;"></div>
+                        <div class="star" style="top: 6%; left: 50%;"></div>
+                        <div class="star" style="top: 7%; left: 40%;"></div>
+                        <div class="star" style="top: 8%; left: 30%;"></div>
+                
+                        <div class="star" style="top: 11%; left: 11%;"></div>
+                        <div class="star" style="top: 24%; left: 24%;"></div>
+                        <div class="star" style="top: 42%; left: 27%;"></div>
+                        <div class="star" style="top: 60%; left: 22%;"></div>
+                        <div class="star" style="top: 62%; left: 28%;"></div>
+                        <div class="star" style="top: 79%; left: 45%;"></div>
+                        <div class="star" style="top: 25%; left: 100%;"></div>
+                        <div class="star" style="top: 9%; left: 78%;"></div>
+                
+                        <div class="star" style="top: 2%; left: 100%;"></div>
+                        <div class="star" style="top: 89%; left: 71%;"></div>
+                        <div class="star" style="top: 44%; left: 10%;"></div>
+                        <div class="star" style="top: 52%; left: 72%;"></div>
+                        <div class="star" style="top: 62%; left: 63%;"></div>
+                        <div class="star" style="top: 73%; left: 45%;"></div>
+                        <div class="star" style="top: 8%; left: 0%;"></div>
+                        <div class="star" style="top: 9%; left: 24%;"></div>
+                
+                        <div class="star" style="top: 90%; left: 80%;"></div>
+                        <div class="star" style="top: 80%; left: 95%;"></div>
+                        <div class="star" style="top: 70%; left: 70%;"></div>
+                        <div class="star" style="top: 60%; left: 90%;"></div>
+                        <div class="star" style="top: 50%; left: 88%;"></div>
+                        <div class="star" style="top: 40%; left: 85%;"></div>
+                        <div class="star" style="top: 30%; left: 82%;"></div>
+                        <div class="star" style="top: 20%; left: 80%;"></div>
+                
+                        <div class="star" style="top: 90%; left: 90%;"></div>
+                        <div class="star" style="top: 80%; left: 81%;"></div>
+                        <div class="star" style="top: 70%; left: 62%;"></div>
+                        <div class="star" style="top: 60%; left: 23%;"></div>
+                        <div class="star" style="top: 50%; left: 44%;"></div>
+                        <div class="star" style="top: 40%; left: 55%;"></div>
+                        <div class="star" style="top: 30%; left: 76%;"></div>
+                        <div class="star" style="top: 20%; left: 17%;"></div>
+                
+                        <div class="star" style="top: 10%; left: 90%;"></div>
+                        <div class="star" style="top: 20%; left: 100%;"></div>
+                        <div class="star" style="top: 30%; left: 40%;"></div>
+                        <div class="star" style="top: 40%; left: 70%;"></div>
+                        <div class="star" style="top: 50%; left: 60%;"></div>
+                        <div class="star" style="top: 60%; left: 40%;"></div>
+                        <div class="star" style="top: 70%; left: 0%;"></div>
+                        <div class="star" style="top: 80%; left: 20%;"></div>
+                
+                        <div class="star" style="top: 90%; left: 40%;"></div>
+                        <div class="star" style="top: 80%; left: 70%;"></div>
+                        <div class="star" style="top: 70%; left: 10%;"></div>
+                        <div class="star" style="top: 60%; left: 70%;"></div>
+                        <div class="star" style="top: 50%; left: 60%;"></div>
+                        <div class="star" style="top: 40%; left: 40%;"></div>
+                        <div class="star" style="top: 30%; left: 0%;"></div>
+                        <div class="star" style="top: 20%; left: 20%;"></div>
+                
+                        <div class="star" style="top: 91%; left: 99%;"></div>
+                        <div class="star" style="top: 92%; left: 98%;"></div>
+                        <div class="star" style="top: 20%; left: 97%;"></div>
+                        <div class="star" style="top: 43%; left: 96%;"></div>
+                        <div class="star" style="top: 58%; left: 95%;"></div>
+                        <div class="star" style="top: 61%; left: 94%;"></div>
+                        <div class="star" style="top: 19%; left: 93%;"></div>
+                        <div class="star" style="top: 59%; left: 92%;"></div>
+                        
+                        <div class="star" style="top: 110%; left: 16%;"></div>
+                        <div class="star" style="top: 120%; left: 24%;"></div>
+                        <div class="star" style="top: 130%; left: 30%;"></div>
+                        <div class="star" style="top: 140%; left: 45%;"></div>
+                        <div class="star" style="top: 150%; left: 55%;"></div>
+                        <div class="star" style="top: 160%; left: 67%;"></div>
+                        <div class="star" style="top: 170%; left: 7%;"></div>
+                        <div class="star" style="top: 190%; left: 86%;"></div>
+
+                        <div class="star" style="top: 110%; left: 11%;"></div>
+                        <div class="star" style="top: 120%; left: 22%;"></div>
+                        <div class="star" style="top: 130%; left: 33%;"></div>
+                        <div class="star" style="top: 140%; left: 49%;"></div>
+                        <div class="star" style="top: 150%; left: 59%;"></div>
+                        <div class="star" style="top: 160%; left: 61%;"></div>
+                        <div class="star" style="top: 170%; left: 70%;"></div>
+                        <div class="star" style="top: 180%; left: 8%;"></div>
+
+                        <div class="star" style="top: 210%; left: 16%;"></div>
+                        <div class="star" style="top: 220%; left: 24%;"></div>
+                        <div class="star" style="top: 230%; left: 30%;"></div>
+                        <div class="star" style="top: 240%; left: 45%;"></div>
+                        <div class="star" style="top: 220%; left: 16%;"></div>
+                        <div class="star" style="top: 220%; left: 24%;"></div>
+                        <div class="star" style="top: 230%; left: 30%;"></div>
+                        <div class="star" style="top: 240%; left: 45%;"></div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <ul>
+                    <li><a href="#delight">Delight</a><a href="#lovers">Lovers</a><a href="#ultimate">Ultimate</a></li>
+                </ul>
+                <span></span>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
